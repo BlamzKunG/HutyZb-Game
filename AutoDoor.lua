@@ -57,7 +57,7 @@ local function teleportSequence()
         local pos = getDoorPosition(door)
         if pos then
             myHRP.CFrame = CFrame.new(pos + Vector3.new(0, 3, 0)) -- ยืนบนประตูหน่อย
-            task.wait(0.02) -- ค้าง 0.5 วิ
+            task.wait(0.03) -- ค้าง 0.5 วิ
         end
     end
 end
