@@ -21,6 +21,6 @@ checkAndLoadDoor()
 -- ฟังก์ชันรันทุกครั้งที่มีประตูใหม่ถูกเพิ่ม
 workspace.School.Doors.ChildAdded:Connect(function(child)
     -- delay เล็กน้อยเผื่อ object ยังไม่ถูกสร้างเต็มที่
-    task.wait(0.1)
+    task.wait(3)
     checkAndLoadDoor()
 end)
