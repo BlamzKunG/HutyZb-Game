@@ -1,10 +1,10 @@
 -- ✅ Toggle เปิดปิดระบบ
-getgenv().AutoFM = true  
+getgenv().AutoReloadDoors = true  
 
 local url = "https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/script.lua" -- 🔹 แก้เป็นลิงก์ของคุณ
 
 local function loadDoorsScript()
-    if getgenv().AutoFM then
+    if getgenv().AutoReloadDoors then
         loadstring(game:HttpGet(url))()
     end
 end
