@@ -62,5 +62,13 @@ local function teleportSequence()
     end
 end
 
--- เริ่มทำงาน
-teleportSequence()
+-- ▼ เพิ่มระบบ AutoFM
+getgenv().AutoFM = true  -- true = ทำงาน, false = หยุด
+
+task.spawn(function()
+    while task.wait(1) do -- รอ 1 วิ ต่อรอบ
+        if getgenv().AutoFM then
+            teleportSequence()
+        end
+    end
+end)
