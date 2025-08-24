@@ -1,7 +1,7 @@
 -- ✅ Toggle เปิดปิดระบบ
 getgenv().AutoReloadDoors = true  
 
-local url = "https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/script.lua" -- 🔹 แก้เป็นลิงก์ของคุณ
+local url = "https://raw.githubusercontent.com/BlamzKunG/HutyZb-Game/refs/heads/main/Autodooorsw.lua" -- 🔹 แก้เป็นลิงก์ของคุณ
 
 local function loadDoorsScript()
     if getgenv().AutoReloadDoors then
