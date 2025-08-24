@@ -1,5 +1,5 @@
 --// ตั้งค่าเปิด-ปิดได้
-getgenv().AutoFarm = true  
+getgenv().AutoFM = true  
 
 --// Services
 local VirtualInputManager = game:GetService("VirtualInputManager")
@@ -24,13 +24,13 @@ end
 -- ลูปทำงาน
 task.spawn(function()
     while task.wait() do
-        if getgenv().AutoFarm then
+        if getgenv().AutoFM then
             for _, key in ipairs(keyList) do
                 pressKey(Enum.KeyCode[key], 0.5)   -- กดปุ่ม 0.5 วิ
                 task.wait(0.1)
                 pressClick(0.5)                    -- คลิกซ้าย 0.5 วิ
                 task.wait(0.1)
-                if not getgenv().AutoFarm then break end
+                if not getgenv().AutoFM then break end
             end
         else
             task.wait(1) -- พักถ้าปิด
